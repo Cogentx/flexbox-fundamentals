@@ -9,11 +9,18 @@ font-family: serif;
 }
 
 .flex-container {
-  display: flex;
+  /* display: flex; */
   background: #000;
 }
 
+.flex-container::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
 .item {
+  float: left;
   width: 100px;
   padding: 100px;
   background: #254de4;
